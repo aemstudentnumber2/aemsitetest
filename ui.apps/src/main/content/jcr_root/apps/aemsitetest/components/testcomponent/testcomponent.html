@@ -1,0 +1,16 @@
+<sly data-sly-use.clientlib="//libs/granite/sightly/templates/clientlib.html"
+     sly data-sly-call="${clientlib.all @ categories='testlib'}">
+</sly>
+<h1 id="${properties.type}">${properties.text}</h1>
+<div data-sly-test="${properties.link && properties.buttontext && properties.imageFileRef}">
+    <form action="${properties.link}">
+        <button>${properties.buttontext}</button>
+    </form>
+</div>
+<div data-sly-test="${!properties.link || !properties.buttontext || !properties.imageFileRef}">
+    <button disabled>${properties.buttontext}</button>
+</div>
+<img id="image" data-sly-test="${properties.imageFileRef}" src=${properties.imageFileRef} alt="">
+<div data-sly-test="${properties.turningOn}">
+    <button onclick="changeTitleIfImageIsBig()">Check size of the picture</button>
+</div>
