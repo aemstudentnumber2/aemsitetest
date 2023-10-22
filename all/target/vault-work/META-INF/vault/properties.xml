@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM site test - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="name">aemsitetest.all</entry>
+<entry key="created">2023-10-22T08:17:50.144Z</entry>
+<entry key="groupId">com.aemsitetest</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.aemsitetest</entry>
+<entry key="description">All content package for AEM site test</entry>
+<entry key="artifactId">aemsitetest.all</entry>
+</properties>

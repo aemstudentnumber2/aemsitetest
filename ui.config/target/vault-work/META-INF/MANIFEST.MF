@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: AEM site test - UI config
+Content-Package-Roots: /apps/aemsitetest/osgiconfig
+Implementation-Version: 1.0.0-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Content-Package-Type: container
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: com.aemsitetest:aemsitetest.ui.config:1.0.0-SNAPSH
+ OT
+Content-Package-Description: UI config package for AEM site test
+

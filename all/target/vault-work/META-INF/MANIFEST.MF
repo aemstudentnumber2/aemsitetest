@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: AEM site test - All
+Content-Package-Roots: /apps/aemsitetest-packages,/apps/aemsitetest-ve
+ ndor-packages
+Implementation-Version: 1.0.0-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Content-Package-Type: container
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: com.aemsitetest:aemsitetest.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for AEM site test
+

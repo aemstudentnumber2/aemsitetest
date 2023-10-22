@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM site test - UI content</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="name">aemsitetest.ui.content</entry>
+<entry key="acHandling">merge</entry>
+<entry key="created">2023-10-22T08:17:49.695Z</entry>
+<entry key="groupId">com.aemsitetest</entry>
+<entry key="dependencies-locations">com.aemsitetest:aemsitetest.ui.apps:1.0.0-SNAPSHOT=maven:com.aemsitetest:aemsitetest.ui.apps:1.0.0-SNAPSHOT:zip</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">content</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="dependencies">com.aemsitetest:aemsitetest.ui.apps:1.0.0-SNAPSHOT</entry>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="group">com.aemsitetest</entry>
+<entry key="description">UI content package for AEM site test</entry>
+<entry key="artifactId">aemsitetest.ui.content</entry>
+</properties>

@@ -1,0 +1,7 @@
+com\aemsitetest\core\testcontext\AppAemContext.class
+com\aemsitetest\core\testcontext\AppAemContext$1.class
+com\aemsitetest\core\models\HelloWorldModelTest.class
+com\aemsitetest\core\filters\LoggingFilterTest.class
+com\aemsitetest\core\schedulers\SimpleScheduledTaskTest.class
+com\aemsitetest\core\listeners\SimpleResourceListenerTest.class
+com\aemsitetest\core\servlets\SimpleServletTest.class

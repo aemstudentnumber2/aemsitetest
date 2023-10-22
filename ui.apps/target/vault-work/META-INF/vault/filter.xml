@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aemsitetest/clientlibs"/>
+    <filter root="/apps/aemsitetest/components"/>
+    <filter root="/apps/aemsitetest/i18n"/>
+</workspaceFilter>

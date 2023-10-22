@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Implementation-Title: AEM site test - UI content
+Content-Package-Roots: /conf/aemsitetest,/content/aemsitetest,/content
+ /dam/aemsitetest,/content/dam/aemsitetest/asset.jpg,/content/experien
+ ce-fragments/aemsitetest
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Dependencies-Locations: com.aemsitetest:aemsitetest.ui
+ .apps:1.0.0-SNAPSHOT=maven:com.aemsitetest:aemsitetest.ui.apps:1.0.0-
+ SNAPSHOT:zip
+Content-Package-Dependencies: com.aemsitetest:aemsitetest.ui.apps:1.0.
+ 0-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Content-Package-Type: content
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: com.aemsitetest:aemsitetest.ui.content:1.0.0-SNAPS
+ HOT
+Content-Package-Description: UI content package for AEM site test
+

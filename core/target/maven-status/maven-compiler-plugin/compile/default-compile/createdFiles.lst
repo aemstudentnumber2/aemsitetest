@@ -1,0 +1,11 @@
+com\aemsitetest\core\listeners\package-info.class
+com\aemsitetest\core\filters\LoggingFilter.class
+com\aemsitetest\core\servlets\package-info.class
+com\aemsitetest\core\schedulers\package-info.class
+com\aemsitetest\core\models\package-info.class
+com\aemsitetest\core\schedulers\SimpleScheduledTask.class
+com\aemsitetest\core\models\HelloWorldModel.class
+com\aemsitetest\core\servlets\SimpleServlet.class
+com\aemsitetest\core\schedulers\SimpleScheduledTask$Config.class
+com\aemsitetest\core\listeners\SimpleResourceListener.class
+com\aemsitetest\core\filters\package-info.class

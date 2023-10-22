@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM site test - UI config</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="name">aemsitetest.ui.config</entry>
+<entry key="created">2023-10-22T08:17:50.051Z</entry>
+<entry key="groupId">com.aemsitetest</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="group">com.aemsitetest</entry>
+<entry key="description">UI config package for AEM site test</entry>
+<entry key="artifactId">aemsitetest.ui.config</entry>
+</properties>
