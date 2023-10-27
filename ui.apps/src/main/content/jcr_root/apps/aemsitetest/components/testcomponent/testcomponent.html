@@ -11,6 +11,6 @@
     <button disabled>${properties.buttontext}</button>
 </div>
 <img id="image" data-sly-test="${properties.imageFileRef}" src=${properties.imageFileRef} alt="">
-<div data-sly-test="${properties.turningOn}">
-    <button onclick="changeTitleIfImageIsBig()">Check size of the picture</button>
-</div>
+<script data-sly-test="${properties.turningOn}">
+    changeTitleIfImageIsBig()
+</script>
