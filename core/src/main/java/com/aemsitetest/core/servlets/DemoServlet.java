@@ -2,6 +2,7 @@ package com.aemsitetest.core.servlets;
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.apache.sling.servlets.annotations.SlingServletResourceTypes;
@@ -25,9 +26,9 @@ public class DemoServlet extends SlingSafeMethodsServlet {
     @Override
     protected void doGet(final SlingHttpServletRequest req,
                          final SlingHttpServletResponse resp) throws IOException {
-        resp.getWriter().write(Objects.requireNonNull(req.getResourceResolver()
-                .getResource("/content/demoResource"))
-                .getValueMap()
-                .get("servletMessage").toString());
+        Resource resource = req.getResourceResolver().getResource("/content/aemsitetest/demoResource");
+        if(resource != null){
+            resp.getWriter().write(resource.getValueMap().get("servletMessage").toString());
+        }
     }
 }
