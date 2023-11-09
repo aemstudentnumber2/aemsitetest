@@ -1,11 +1,10 @@
 package com.aemsitetest.core.models;
 
-import org.apache.sling.api.resource.Resource;
+import com.aemsitetest.core.services.ComponentTitleChange;
+import org.apache.sling.api.resource.*;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
-import org.apache.sling.models.annotations.injectorspecific.SlingObject;
-import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+import org.apache.sling.models.annotations.injectorspecific.*;
 
 import javax.annotation.PostConstruct;
 
@@ -17,19 +16,28 @@ public class DemoModel {
     @ValueMapValue(name=PROPERTY_RESOURCE_TYPE, injectionStrategy= InjectionStrategy.OPTIONAL)
     @Default(values="No resourceType")
     protected String message;
+    @ValueMapValue(name="text", injectionStrategy= InjectionStrategy.OPTIONAL)
+    @Default(values="No resourceType")
+    protected String title;
 
     @SlingObject
     private Resource currentResource;
-
-    @PostConstruct
-    protected void init() {
-        if (currentResource != null) {
-            message = currentResource.getValueMap().get("message", message.getClass());
-        }
-    }
+    @OSGiService
+    ComponentTitleChange componentTitleChange;
 
     public String getMessage() {
         return message;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    @PostConstruct
+    protected void init() {
+        if (currentResource != null) {
+            message = currentResource.getValueMap().get("message", message.getClass());
+            title = componentTitleChange.giveTitlePathForMergingAndGetItBack(title, currentResource.getPath());
+        }
+    }
 }
